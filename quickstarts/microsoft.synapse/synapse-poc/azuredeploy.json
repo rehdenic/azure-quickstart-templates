@@ -2,14 +2,6 @@
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
   "parameters": {
-    "_artifactsLocation": {
-      "type": "string",
-      "defaultValue": "[deployment().properties.templatelink.uri]"
-    },
-    "_artifactsLocationSASToken": {
-      "type": "securestring",
-      "defaultValue": ""
-    },
     "location": {
       "type": "string",
       "defaultValue": "[resourceGroup().location]",
